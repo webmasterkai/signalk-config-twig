@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "enableLogging": true,
+  "configuration": {
+    "path": "environment.cpu.temperature",
+    "rate": 30
+  }
+}

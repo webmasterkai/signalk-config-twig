@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "device": "/dev/ttyUSB2",
+    "updateMinutes": 30
+  }
+}

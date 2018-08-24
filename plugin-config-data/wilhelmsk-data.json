@@ -1,0 +1,10 @@
+{
+  "gauges": {
+    "Depth": {
+      "type": "Digital",
+      "title": "Depth",
+      "path": "environment.depth.belowSurface",
+      "basedOn": "Depth"
+    }
+  }
+}

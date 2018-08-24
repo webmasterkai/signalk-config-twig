@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "on": false,
+    "radius": 0.13080904659962184,
+    "fudge": 0,
+    "bowHeight": 0,
+    "state": "emergency"
+  }
+}

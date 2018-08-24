@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "events": [
+      {
+        "eventId": "AISout",
+        "protocol": "udp",
+        "port": 10110,
+        "hostname": "50.116.20.28"
+      },
+      {
+        "eventId": "nmea0183out",
+        "protocol": "udp",
+        "port": 2000,
+        "hostname": "192.168.4.255"
+      }
+    ]
+  }
+}
