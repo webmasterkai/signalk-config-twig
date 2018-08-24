@@ -1,6 +1,72 @@
 {
-  "port": 80,
   "security": {
     "strategy": "./tokensecurity"
+  },
+  "pipedProviders": [
+    {
+      "id": "ais",
+      "pipeElements": [
+        {
+          "type": "providers/simple",
+          "options": {
+            "logging": true,
+            "type": "NMEA0183",
+            "subOptions": {
+              "type": "serial",
+              "device": "/dev/ttyACM0",
+              "sentenceEvent": "nmea0183out",
+              "baudrate": 38400
+            }
+          }
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "n2k",
+      "pipeElements": [
+        {
+          "type": "providers/simple",
+          "options": {
+            "logging": true,
+            "type": "NMEA2000",
+            "subOptions": {
+              "type": "ngt-1",
+              "device": "/dev/ttyUSB0"
+            }
+          }
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "n83",
+      "pipeElements": [
+        {
+          "type": "providers/simple",
+          "options": {
+            "logging": true,
+            "type": "NMEA0183",
+            "subOptions": {
+              "baudrate": 4800,
+              "device": "/dev/ttyUSB1",
+              "type": "serial",
+              "toStdout": ["nmeaSerial"]
+            }
+          }
+        }
+      ],
+      "enabled": true
+    }
+  ],
+  "interfaces": {
+    "appstore": true,
+    "nmea-tcp": true,
+    "plugins": true,
+    "providers": true,
+    "rest": true,
+    "tcp": true,
+    "webapps": true,
+    "ws": true
   }
 }
