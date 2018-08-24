@@ -65,6 +65,7 @@
     "plugins": true,
     "providers": true,
     "rest": true,
+    "server-admin-ui": true,
     "tcp": true,
     "webapps": true,
     "ws": true
