@@ -1,8 +1,15 @@
 {
   "vessels": {
     "self": {
-      "uuid": "urn:mrn:signalk:uuid:343dca32-8f93-4f09-b020-40b6c71deaac",
-      "name": "TWIG"
+      "name": "TWIG",
+      "mmsi": "367572690",
+      "design": {
+        "draft": {
+          "value": {
+            "maximum": 2.1
+          }
+        }
+      }
     }
   }
 }
